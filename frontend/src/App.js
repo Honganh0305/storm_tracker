@@ -44,7 +44,7 @@ function App() {
   useEffect(() => {
     if (!mapContainerRef.current) return;
 
-    mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN || "";
+    mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
